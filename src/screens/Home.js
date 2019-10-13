@@ -46,6 +46,10 @@ export class Home extends React.Component {
                     onPress={() => this.onChangeLang('ar')}
                     title={t('common:actions.toggleToArabic')}
                 />
+                <Button
+                    onPress={() => this.onChangeLang('bn')}
+                    title={t('common:actions.toggleToBengali')}
+                />
                 <View style={styles.langContainer}>
                     <Text style={styles.separate}>{t('introduction')}</Text>
                     <Button

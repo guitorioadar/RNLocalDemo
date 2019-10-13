@@ -7,6 +7,7 @@ import { AsyncStorage } from 'react-native';
 import de from './de.json';
 import en from './en.json';
 import ar from './ar.json';
+import bn from './bn.json';
 
 const STORAGE_KEY = '@APP:languageCode';
 
@@ -31,7 +32,7 @@ i18n
     .use(reactI18nextModule)
   .init({
     fallbackLng: 'en',
-    resources: { en, de, ar},
+    resources: { en, de, ar, bn},
 
     // have a common namespace used around the full app
     ns: ['common'],

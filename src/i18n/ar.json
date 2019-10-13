@@ -10,10 +10,12 @@
   "common": {
     "currentLanguage":  " تم تعيين اللغة على '{{lng}}' ",
     "actions": {
-      "toggleToGerman": "الألمانية",
-      "toggleToEnglish": "الإنجليزية",
+      "toggleToGerman": "Deutsch",
+      "toggleToEnglish": "English",
       "toggleToArabic": "العربية",
+      "toggleToBengali": "বাংলা",
       "goToPage2": "افتح الصفحة 2"
-    }
+    },
+    "infoText": "<0>Vulval<0> Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
   }
 }
