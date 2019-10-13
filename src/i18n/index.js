@@ -1,5 +1,6 @@
 import i18n from 'i18next';
-import { reactI18nextModule } from 'react-i18next';
+import { reactI18nextModule, } from 'react-i18next';
+// import { initReactI18next, } from 'react-i18next';
 import locale from 'react-native-locale-detector';
 import { AsyncStorage } from 'react-native';
 
@@ -7,6 +8,7 @@ import { AsyncStorage } from 'react-native';
 import de from './de.json';
 import en from './en.json';
 import ar from './ar.json';
+import bn from './bn.json';
 
 const STORAGE_KEY = '@APP:languageCode';
 
@@ -29,9 +31,10 @@ const languageDetector = {
 i18n
     .use(languageDetector)
     .use(reactI18nextModule)
+    // .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    resources: { en, de, ar},
+    resources: { en, de, ar, bn},
 
     // have a common namespace used around the full app
     ns: ['common'],

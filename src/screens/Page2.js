@@ -1,5 +1,6 @@
 import React from 'react';
-import { translate, Trans } from 'react-i18next';
+import { translate, Trans, } from 'react-i18next';
+// import { useTranslation, Trans, withTranslation } from 'react-i18next';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
 
@@ -17,7 +18,7 @@ export class Page2 extends React.Component {
         <Text>{t('common:currentLanguage', { lng: i18n.language })}</Text>
         <Trans i18nKey="common:infoText">
           <Text style={styles.bold}>
-            <Text style={styles.bold}>One </Text>
+            <Text style={styles.bold}>One hello </Text>
             <Text style={styles.light}>Two </Text>
             <Text style={styles.bold}>Three </Text>
             <Text style={styles.light}>Four </Text>
@@ -30,6 +31,8 @@ export class Page2 extends React.Component {
 }
 
 export default translate(['page2', 'common'], { wait: true })(Page2);
+// export default useTranslation(['page2', 'common'], { wait: true })(Page2);
+// export default withTranslation(['page2', 'common'], { wait: true })(Page2);
 
 const styles = StyleSheet.create({
   container: {
